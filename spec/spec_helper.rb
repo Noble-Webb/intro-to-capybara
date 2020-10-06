@@ -1,3 +1,7 @@
+#To use Capybara for integration tests in Rails or 
+#Sinatra, we need to include it in our testing environment. 
+#In our spec/spec_helper.rb file, we add the following code:
+
 # Load RSpec and Capybara
 require 'rspec'
 require 'capybara/rspec'

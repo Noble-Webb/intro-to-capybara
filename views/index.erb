@@ -1,1 +1,19 @@
-<%# Write your code here! %>
+
+    <h1> Welcome!</h1>
+
+    <form action="/greet" method="POST">
+        <label for="user_name">Name:</label>
+        
+        <p><input type="text" name="user_name" id="user_name" /></p>
+
+        <input type="submit" value="Submit"/>
+    </form>
+
+
+# Don't worry about the specifics of the HTML form. 
+# Just know that it is building an HTML form that, 
+# when submitted, will create an HTTP POST request to /greet.
+# The POST request will contain whatever the user typed into 
+# the form's <input> field, which is nested within the form 
+# and has a name value of user_name, matching our 
+# Capybara test expectation.
